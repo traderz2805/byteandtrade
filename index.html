@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Byte & Trade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Byte & Trade – Educational trading concepts, apps, and learning resources.">
+  <meta name="robots" content="index, follow">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<div id="particles"></div>
+
+<!-- LOCK MODAL -->
+<div class="modal" id="lockModal">
+  <div class="modal-box">
+    <h3>🔒 Content Locked</h3>
+    <p>Support us by viewing an advertisement</p>
+
+    <!-- AdSense Safe Area -->
+    <div class="adsense-box">
+      <!-- Paste AdSense Ad Unit Code here AFTER approval -->
+      Ad Space
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Continue -->
+    <button id="continueBtn" onclick="unlock()" style="display:none;">
+      Continue
+    </button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>BYTE & TRADE</h1>
+  <p>Learn • Trade • Grow</p>
+
+  <div class="menu">
+    <!-- FIXED: Trading scrolls, not locked -->
+    <div class="card" onclick="goToTrading()">Trading</div>
+    <div class="card" onclick="openLocked('apps')">Apps</div>
+    <div class="card" onclick="openLocked('pdfs')">PDFs</div>
+  </div>
+</section>
+
+<!-- INTRO CONTENT -->
+<section class="section">
+  <p>
+    Byte & Trade is an educational platform focused on teaching trading concepts,
+    market behavior, and financial learning tools for beginners.
+  </p>
+
+  <p>
+    All resources provided on this platform are for learning purposes only.
+    Users should always conduct their own research before participating in
+    financial markets.
+  </p>
+</section>
+
+<!-- TRADING -->
+<section class="section" id="trading">
+  <h2>Trading Concepts</h2>
+
+  <p class="section-text">
+    Below are core trading concepts that help traders understand price action,
+    market psychology, and risk management.
+  </p>
+
+  <div class="grid">
+    <div class="item" onclick="openLocked('trading','candlestick')">Candlestick Psychology</div>
+    <div class="item" onclick="openLocked('trading','support_resistance')">Support & Resistance</div>
+    <div class="item" onclick="openLocked('trading','liquidity')">Liquidity</div>
+    <div class="item" onclick="openLocked('trading','fvg')">Fair Value Gap</div>
+    <div class="item" onclick="openLocked('trading','fibonacci')">Fibonacci</div>
+    <div class="item" onclick="openLocked('trading','psychology')">Money Management</div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<section class="section">
+  <p class="disclaimer">
+    Disclaimer: All content on Byte & Trade is for educational purposes only.
+    We do not provide financial or investment advice. Trading involves risk.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="disclaimer.html">Disclaimer</a>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

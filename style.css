@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #05070f;
+  color: #fff;
+}
+
+/* PARTICLES */
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  background: linear-gradient(90deg, #00f0ff, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu {
+  margin-top: 40px;
+  display: flex;
+  gap: 25px;
+}
+
+.card {
+  padding: 20px 45px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px #00f0ff;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 10%;
+}
+
+.section-text {
+  margin-bottom: 30px;
+  opacity: 0.85;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 25px;
+}
+
+.item {
+  padding: 30px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px #00f0ff;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.85);
+  z-index: 999;
+}
+
+.modal-box {
+  background: #0e1220;
+  padding: 40px;
+  border-radius: 22px;
+  text-align: center;
+  width: 320px;
+}
+
+.adsense-box {
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+}
+
+/* PROGRESS BAR */
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00f0ff, #ffd700);
+}
+
+/* BUTTON */
+button {
+  margin-top: 25px;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00f0ff, #ffd700);
+}
+
+/* DISCLAIMER */
+.disclaimer {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255,255,255,0.03);
+}
+
+footer a {
+  color: #aaa;
+  margin: 0 10px;
+  text-decoration: none;
+}
