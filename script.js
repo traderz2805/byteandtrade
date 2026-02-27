@@ -15,7 +15,7 @@ particlesJS("particles", {
 
 /* LINKS */
 const LINKS = {
-  apps: "https://t.me/appgamesbt",
+  apps: "https://codeorbitonlinez.blogspot.com/2026/02/cube-rush-3d-body-margin0.html",
   pdfs: "https://t.me/pdfbt",
   trading: {
     candlestick: "https://youtu.be/9c5PDTo4VqM",
